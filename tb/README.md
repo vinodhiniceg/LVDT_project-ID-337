@@ -15,11 +15,9 @@ Further explanation on the operation given in.
 
 The testbench given here requires two programs.
 
-1. [Icarus Iverilog](https://github.com/steveicarus/iverilog)
-    Please take a look at iverilog's github repository (link given above) for installation instructions.
+1. [Icarus Iverilog](https://github.com/steveicarus/iverilog) - Please take a look at iverilog's github repository (link given above) for installation instructions.
 
-2. [GTKWave Analyser](http://gtkwave.sourceforge.net/)
-    GTKWave can be installed easily on Ubuntu using `apt`, the package manager.
+2. [GTKWave Analyser](http://gtkwave.sourceforge.net/) - GTKWave can be installed easily on Ubuntu using `apt`, the package manager.
 
 ```
 sudo apt-get install gtkwave
@@ -32,6 +30,6 @@ chmod +x verify.sh
 ./verify.sh
 ```
 
-In the window opened by GTKWave, please click on `top_module` that appears on the left pane.
+In the window opened by GTKWave, please click on `top_module_tb` that appears on the left pane.
 It will list 9 signals below. Double click on the one that you want to view.
 
