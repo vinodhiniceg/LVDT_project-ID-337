@@ -138,6 +138,5 @@ From the above discussions , a complete checklist of the completed/ to-be-comple
 
 
 ## Project Owner Information
-======================================
 
 The project owner is Mrs. Vinodhini G. Edward, a PhD student under the supervision of Prof. Dr. P. V. Ramakrishna and Dr. J. Dhurga Devi, at the Department of Electronics and Communication Engineering, College of Engineering Guindy Campus, Anna University.
