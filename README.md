@@ -108,12 +108,22 @@ The layout for charge pump has been carried out and is available in the folder n
 ### Checklist for Tape-Out
 From the above discussions , a complete checklist of the completed/ to-be-completed tasks before the tapeout deadline is given below.
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+#### Individual Blocks Verification
+| Tasks  | Pre-layout Simulation  |  Layout  | DRC, LVS, RCX  | Post-Layout Simulation  | Corner Simulations  |
+|---|---|---|---|---|---|
+| Colpitts Oscillator | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Slope Amplifier | ✓ | ✓ | ✓ | ✓ | ✗ |
+| FDC (Comparator) | ✓ | ✓ | ✓ | ✓ | ✗ |
+| FDC (Charge Pump) | ✓ | ✓ | ✓ | ✓ | ✗ |
+
+
+#### Integrated Blocks Verification
+| Tasks  | Pre-layout Simulation  |  Layout  | DRC, LVS, RCX  | Post-Layout Simulation  | Monte-Carlo Simulations  | IO/ESD |
+|---|---|---|---|---|---|---|
+| Colpitts Oscillator + Slope Amplifier | ✓ | ✓ | ✓ | ✓ | ✗ |   |
+| Colpitts Oscillator + Slope Amplifier + FDC Complete Loop | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
+
+
 
 ### References
 
