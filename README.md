@@ -96,12 +96,20 @@ From Figure 5, it can be seen that as the capacitor voltage settles to 1.65V aft
 
 The layout for the digital portions of the FDC has been carried out using OpenLANE. Verilog code has been written for the digital portions and its RTL functionality is verified using iverilog. Independent description for the digital portion is available in the `README.md` file associated with the folder `verilog`.
 
-The layout of the analog portions can be found in the `/layout` folder and the schematics can be found in the `xschem` folder.
+The layout of the analog portions, comparator and charge pump (`strongarmlatch` and `chargepump`) can be found in the `/layout` folder and the schematics can be found in the `/xschem` folder.
 
-A snapshot of the the postlayout simualtion results is given in Figure 6.  The top signal is the input to the comparator , following which is the reference of 1.65V and a clock signal . At every clock signal, the comparison takes place, and when the input exceeds the reference the output signal is set high (green colour)
+A snapshot of the the post-layout simualtion results is given in Figure 6.  The top signal is the input to the comparator , following which is the reference of 1.65V and a clock signal . At every clock signal, the comparison takes place, and when the input exceeds the reference the output signal is set high (green colour).
 
-The layout for charge pump , has been carried out and is available in the folder named ‘layout’ (filename: ‘chargepump.mag’). The layout is LVS cleared and postlayout simulations of the  extracted spice netlist with parasitics has been carried out. The pre-layout and post-layout simulations do not match and some debuggigng needs to be done with it.
+![Figure 6](./img/Image6.png "Figure 6")
+Fig. 6 Post-Layout Simulations of Comparator
 
-### Checklist for tape-out
+The layout for charge pump has been carried out and is available in the folder named `/layout/chargepump.mag`. The layout is LVS cleared and post-layout simulations of the  extracted spice netlist with parasitics has been carried out. The pre-layout and post-layout simulations do not match and some debuggigng needs to be done with it.
+
+### Checklist for Tape-Out
 From the above discussions , a complete checklist of the completed/ to-be-completed tasks before the tapeout deadline is given below
- 
+
+### References
+
+1. I. I. Izyumin et al., "A 7ppm, 6°/hr frequency-output MEMS gyroscope," *2015 28th IEEE International Conference on Micro Electro Mechanical Systems (MEMS)*, 2015, pp. 33-36, [doi: 10.1109/MEMSYS.2015.7050879](https://ieeexplore.ieee.org/document/7050879).
+
+2. I. Galton, W. Huff, P. Carbone and E. Siragusa, "A delta-sigma PLL for 14-b, 50 kSample/s frequency-to-digital conversion of a 10 MHz FM signal," in *IEEE Journal of Solid-State Circuits*, vol. 33, no. 12, pp. 2042-2053, Dec. 1998, [doi: 10.1109/4.735546](https://ieeexplore.ieee.org/document/735546).
