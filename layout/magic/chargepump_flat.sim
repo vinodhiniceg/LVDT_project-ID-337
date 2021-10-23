@@ -1,0 +1,24 @@
+| units: 500000 tech: sky130A format: MIT
+x dg vssa dg vssa l=200 w=2000 x=2062 y=34 sky130_fd_pr__nfet_g5v0d10v5
+x Iin Iin vdda vdda l=200 w=2000 x=366 y=342 sky130_fd_pr__pfet_g5v0d10v5
+x dg nc vssa vssa l=200 w=6800 x=-2315 y=4050 sky130_fd_pr__nfet_g5v0d10v5
+x Iin pc vdda vdda l=200 w=8000 x=-629 y=50 sky130_fd_pr__pfet_g5v0d10v5
+x Iin vdda dg vdda l=200 w=2000 x=896 y=340 sky130_fd_pr__pfet_g5v0d10v5
+x out1 pc vc vdda l=200 w=2000 x=108 y=2436 sky130_fd_pr__pfet_g5v0d10v5
+x out2 vc nc vssa l=200 w=2000 x=1404 y=3134 sky130_fd_pr__nfet_g5v0d10v5
+C vdda dg 2.12
+C vdda Iin 2.30
+C pc vdda 3.48
+C Iin GND 9.45
+R Iin 12666
+R vc 8711
+R pc 34280
+R out1 1059
+R out2 1150
+C nc GND 8.56
+R nc 31187
+C dg GND 12.41
+R dg 17258
+C vdda GND 40.70
+R vdda 61419
+R vssa 67624

@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1634907805
+<< poly >>
+rect 76 1422 476 1582
+rect 78 1128 214 1190
+rect 354 1128 490 1190
+rect 82 828 218 890
+rect 344 824 480 886
+rect 80 536 216 598
+rect 352 536 488 598
+rect 80 244 216 306
+rect 348 238 484 300
+<< metal1 >>
+rect 520 1410 568 1412
+rect -16 1372 586 1410
+rect -6 1294 56 1372
+rect 520 1296 568 1372
+rect -6 1292 42 1294
+rect -6 1260 52 1292
+rect 2 114 52 1260
+rect 262 116 312 1294
+rect 520 1270 574 1296
+rect 524 118 574 1270
+use sky130_fd_pr__nfet_g5v0d10v5_HSTZHU  sky130_fd_pr__nfet_g5v0d10v5_HSTZHU_0
+timestamp 1634907805
+transform 1 0 287 0 1 714
+box -287 -714 287 714
+<< end >>

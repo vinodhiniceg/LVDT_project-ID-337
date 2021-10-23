@@ -1,0 +1,66 @@
+**.subckt colpitts_slopeamp
+V1 net1 GND 1.8
+XM1 vout vina vcap GND sky130_fd_pr__nfet_g5v0d10v5 L=5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=525 m=525 
+V2 vina GND 1.2
+L1 net2 vout 10m m=1
+R1 net1 net2 68 m=1
+C1 vout vcap 47n m=1
+C2 vcap vssa 0.1u m=1
+V4 vcap net3 0
+XM2 net3 vinb vssa vssa sky130_fd_pr__nfet_g5v0d10v5 L=5 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=200 m=200 
+V3 vinb GND 0.9
+XM3 vout1 vout vdda vdda sky130_fd_pr__pfet_g5v0d10v5 L=3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=184 m=184 
+XM4 vout1 vout vssa vssa sky130_fd_pr__nfet_g5v0d10v5 L=3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=20 m=20 
+V5 vdda GND 3.3
+C3 vout1 vssa 5p m=1
+XM5 vout2 vout1 vdda vdda sky130_fd_pr__pfet_g5v0d10v5 L=3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200 
+XM6 vout2 vout1 vssa vssa sky130_fd_pr__nfet_g5v0d10v5 L=3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=25 m=25 
+C4 vout2 vssa 3p m=1
+XM7 vout3 vout2 vdda vdda sky130_fd_pr__pfet_g5v0d10v5 L=3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=124 m=124 
+XM8 vout3 vout2 vssa vssa sky130_fd_pr__nfet_g5v0d10v5 L=3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=24 m=24 
+C5 vout3 vssa 2p m=1
+V6 clkin GND pulse 0 3.3 1u 1n 1n 100u 200u
+V7 r GND 3.3
+V8 vssa GND 0
+x1 clkin vout3 r VGND VNB VPB VPWR dfout sky130_fd_sc_hvl__dfrtp_1
+V9 VPWR GND 3.3
+V10 VPB GND 3.3
+V11 VNB GND 0
+V12 VGND GND 0
+**** begin user architecture code
+  .lib /home/vinodhini/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/vinodhini/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+.param mc_mm_switch=0
+ .param mc_pr_switch=0
+
+
+.tran 10n 10m
+*.options gmin=1E-11
+.save vout vout1 vout2 vout3 clkin dfout r
+.control
+run
+plot v(vout) v(vout1) v(vout2) v(vout3)
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.save vout vout1 vout2 vout3 clkin dfout r
+.end

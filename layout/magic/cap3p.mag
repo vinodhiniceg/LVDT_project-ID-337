@@ -1,0 +1,23 @@
+magic
+tech sky130A
+timestamp 1634206384
+<< metal3 >>
+rect -2187 110 -2116 2600
+rect -40 153 31 2601
+rect -2239 -253 -2086 110
+rect -89 -253 64 153
+rect -2239 -453 64 -253
+rect -2239 -511 63 -453
+<< metal4 >>
+rect -3450 2830 1185 3014
+rect -3438 2408 -3169 2830
+rect -1218 2385 -949 2830
+rect 915 2299 1184 2830
+use sky130_fd_pr__cap_mim_m3_1_D8F5A5  sky130_fd_pr__cap_mim_m3_1_D8F5A5_0
+timestamp 1634206384
+transform 1 0 -1078 0 1 1300
+box -3214 -1300 3214 1300
+<< labels >>
+rlabel metal3 -1301 -433 -1301 -433 5 bot
+rlabel metal4 -1273 2940 -1273 2940 5 top
+<< end >>

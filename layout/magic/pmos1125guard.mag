@@ -1,0 +1,17 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1634904592
+<< metal1 >>
+rect 102 1498 678 1504
+rect 100 1474 678 1498
+rect 100 1406 156 1474
+rect 102 222 154 1406
+rect 364 224 416 1408
+rect 622 1402 678 1474
+rect 622 230 674 1402
+use sky130_fd_pr__pfet_g5v0d10v5_KEWWLV  sky130_fd_pr__pfet_g5v0d10v5_KEWWLV_0
+timestamp 1634904592
+transform 1 0 392 0 1 817
+box -487 -914 487 914
+<< end >>

@@ -1,0 +1,20 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1634904425
+<< metal1 >>
+rect 96 1526 146 1530
+rect 96 1518 678 1526
+rect 96 1488 680 1518
+rect 96 1430 146 1488
+rect 96 1406 152 1430
+rect 110 226 152 1406
+rect 370 228 412 1432
+rect 630 1428 680 1488
+rect 626 1394 680 1428
+rect 626 224 668 1394
+use sky130_fd_pr__nfet_g5v0d10v5_GJDRK9  sky130_fd_pr__nfet_g5v0d10v5_GJDRK9_0
+timestamp 1634904425
+transform 1 0 392 0 1 819
+box -457 -884 457 884
+<< end >>

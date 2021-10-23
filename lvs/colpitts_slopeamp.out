@@ -1,0 +1,65 @@
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C8TC2Y in circuit nmos101035 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_S5BDQR in circuit nmos101024 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_S5TLYR in circuit nmos101043 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_C8B57Z in circuit nmos101025 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_7MG9ZH in circuit nmos5555 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_6CSA4Z in circuit pmos3345 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_TA684Z in circuit pmos3355 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_2CSA4Z in circuit pmos3383 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_JRTA4Z in circuit pmos3382 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_MZR6RC in circuit nmos33210 (0)(1 instance)
+Flattening unmatched subcell nmos101035 in circuit nmos1010514 (0)(2 instances)
+Flattening unmatched subcell nmos101024 in circuit nmos1010514 (0)(1 instance)
+Flattening unmatched subcell nmos101043 in circuit nmos1010514 (0)(1 instance)
+Flattening unmatched subcell nmos101025 in circuit nmos1010514 (0)(2 instances)
+Flattening unmatched subcell nmos5555 in circuit nmos55535 (0)(7 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_QWH9RS in circuit nmos3355 (0)(1 instance)
+Flattening unmatched subcell pmos3345 in circuit pmos33431 (0)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_6STA4Z in circuit pmos33431 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_GZ7LRN in circuit nmos3346 (0)(1 instance)
+Flattening unmatched subcell pmos3355 in circuit pmos331020 (0)(8 instances)
+Flattening unmatched subcell pmos3383 in circuit pmos33823 (0)(7 instances)
+Flattening unmatched subcell pmos3382 in circuit pmos33823 (0)(1 instance)
+Flattening unmatched subcell nmos33210 in circuit nmos33210guard (0)(3 instances)
+Flattening unmatched subcell nmos1010514 in circuit nmos1010514guard (0)(3 instances)
+Flattening unmatched subcell nmos55535 in circuit nmos551535 (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_D8F5A5 in circuit cap3p (0)(1 instance)
+Flattening unmatched subcell nmos3355 in circuit nmos3355guard (0)(3 instances)
+Flattening unmatched subcell pmos33431 in circuit pmos33431guard (0)(3 instances)
+Flattening unmatched subcell nmos3346 in circuit nmos3346guard (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_DCN5A5 in circuit cap5p (0)(1 instance)
+Flattening unmatched subcell pmos331020 in circuit pmos331020guard (0)(3 instances)
+Flattening unmatched subcell pmos33823 in circuit pmos33823guard (0)(3 instances)
+Flattening unmatched subcell nmos33210guard in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell nmos1010514guard in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell nmos551535 in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell cap3p in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell nmos3355guard in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_DAF5A5 in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell pmos33431guard in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell nmos3346guard in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell cap5p in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell pmos331020guard in circuit colpitts4.spice (0)(1 instance)
+Flattening unmatched subcell pmos33823guard in circuit colpitts4.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class colpitts4.spice:  Merged 3513 devices.
+Class colpitts_osc.spice:  Merged 6 devices.
+
+Subcircuit summary:
+Circuit 1: colpitts4.spice                 |Circuit 2: colpitts_osc.spice              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (6)           |sky130_fd_pr__nfet_g5v0d10v5 (6)           
+sky130_fd_pr__cap_mim_m3_1 (3)             |sky130_fd_pr__cap_mim_m3_1 (3)             
+sky130_fd_sc_hvl__dfrtp_1 (1)              |sky130_fd_sc_hvl__dfrtp_1 (1)              
+sky130_fd_pr__pfet_g5v0d10v5 (4)           |sky130_fd_pr__pfet_g5v0d10v5 (4)           
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes colpitts4.spice and colpitts_osc.spice are equivalent.
+Circuits match uniquely.

@@ -1,0 +1,25 @@
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FTTAN3 in circuit pmos1125 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_HSTZHU in circuit nmos1125 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_TMTL6D in circuit pmos11410 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_U3KEUB in circuit nmos11217 (0)(1 instance)
+Flattening unmatched subcell pmos1125 in circuit chargepump.spice (0)(3 instances)
+Flattening unmatched subcell nmos1125 in circuit chargepump.spice (0)(2 instances)
+Flattening unmatched subcell pmos11410 in circuit chargepump.spice (0)(1 instance)
+Flattening unmatched subcell nmos11217 in circuit chargepump.spice (0)(1 instance)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class chargepump.spice:  Merged 117 devices.
+
+Subcircuit summary:
+Circuit 1: chargepump.spice                |Circuit 2: chargepump_lvs.spice            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (4)           |sky130_fd_pr__pfet_g5v0d10v5 (4)           
+sky130_fd_pr__nfet_g5v0d10v5 (3)           |sky130_fd_pr__nfet_g5v0d10v5 (3)           
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes chargepump.spice and chargepump_lvs.spice are equivalent.
+Circuits match uniquely.

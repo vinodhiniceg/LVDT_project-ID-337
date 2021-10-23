@@ -1,0 +1,30 @@
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_3AHBS2 in circuit pmos8point5 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_ZNRHR4 in circuit nmos8point5 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_D8BGLR in circuit nmos4point5 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_D8BYWP in circuit nmos12point5 (0)(1 instance)
+Flattening unmatched subcell pmos8point5 in circuit strongarmlatch.spice (0)(8 instances)
+Flattening unmatched subcell nmos8point5 in circuit strongarmlatch.spice (0)(1 instance)
+Flattening unmatched subcell nmos4point5 in circuit strongarmlatch.spice (0)(2 instances)
+Flattening unmatched subcell nmos12point5 in circuit strongarmlatch.spice (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_R5T9XB in circuit strongarmlatch.spice (0)(2 instances)
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Class strongarmlatch.spice:  Merged 91 devices.
+
+Subcircuit summary:
+Circuit 1: strongarmlatch.spice            |Circuit 2: strongarmlatch_xschem.spice     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (8)           |sky130_fd_pr__pfet_g5v0d10v5 (8)           
+sky130_fd_pr__nfet_g5v0d10v5 (7)           |sky130_fd_pr__nfet_g5v0d10v5 (7)           
+sky130_fd_sc_hvl__inv_1 (4)                |sky130_fd_sc_hvl__inv_1 (4)                
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes strongarmlatch.spice and strongarmlatch_xschem.spice are equivalent.
+Circuits match uniquely.

@@ -1,0 +1,245 @@
+**.subckt strongarmlatch
+
+X0 sky130_fd_sc_hvl__inv_1_1/A.t0 sky130_fd_sc_hvl__inv_1_0/A.t3 a_n260_n1316.t1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X1 vom sky130_fd_sc_hvl__inv_1_0/A.t4 vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=750000u l=500000u
+X2 vp vm vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=750000u l=500000u
+X3 a_n260_n1316.t3 clk vdda.t20 vdda.t19 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X4 a_3148_n1460.t1 vref nmos8point5_0/d.t0 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X5 a_n260_n1316.t2 vinp nmos8point5_0/d.t3 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X6 sky130_fd_sc_hvl__inv_1_0/A.t1 sky130_fd_sc_hvl__inv_1_1/A.t3 a_3148_n1460.t0 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X7 vp vm vdda.t11 vdda.t10 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=500000u
+X8 a_3148_n1460.t2 vinp nmos8point5_0/d.t2 vdda.t12 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X9 a_3148_n1460.t3 clk vdda.t18 vdda.t17 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X10 sky130_fd_sc_hvl__inv_1_1/A.t2 clk vdda.t16 vdda.t15 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X11 vm vp vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=750000u l=500000u
+X12 vdda.t14 clk sky130_fd_sc_hvl__inv_1_0/A.t2 vdda.t13 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X13 vssa vom vp vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X14 a_n260_n1316.t0 vref nmos8point5_0/d.t1 vdda.t6 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X15 vdda clk sky130_fd_sc_hvl__inv_1_0/A vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u M=7
+X16 vdda clk sky130_fd_sc_hvl__inv_1_1/A vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u M=7
+X17 vdda.t5 sky130_fd_sc_hvl__inv_1_1/A.t4 sky130_fd_sc_hvl__inv_1_0/A.t0 vdda.t4 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X18 vssa clk nmos8point5_0/d.t4 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X19 vssa clk nmos8point5_0/d vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u M=7
+X20 vdda sky130_fd_sc_hvl__inv_1_1/A sky130_fd_sc_hvl__inv_1_0/A vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u M=7
+X21 vdda.t3 sky130_fd_sc_hvl__inv_1_1/A.t5 vop vdda.t2 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=500000u
+X22 vssa vop vm vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X23 sky130_fd_sc_hvl__inv_1_1/A.t1 sky130_fd_sc_hvl__inv_1_0/A.t5 vdda.t9 vdda.t4 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u
+X24 sky130_fd_sc_hvl__inv_1_1/A sky130_fd_sc_hvl__inv_1_0/A vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=500000u M=7
+X25 vm vp vdda.t1 vdda.t0 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=500000u
+X26 vssa sky130_fd_sc_hvl__inv_1_1/A.t6 vop vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=750000u l=500000u
+X27 vom sky130_fd_sc_hvl__inv_1_0/A.t6 vdda.t8 vdda.t7 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=500000u
+R0 sky130_fd_sc_hvl__inv_1_0/A.n5 sky130_fd_sc_hvl__inv_1_0/A.n4 180.749
+R1 sky130_fd_sc_hvl__inv_1_0/A.n12 sky130_fd_sc_hvl__inv_1_0/A.t5 176.013
+R2 sky130_fd_sc_hvl__inv_1_0/A.n16 sky130_fd_sc_hvl__inv_1_0/A.n15 174.987
+R3 sky130_fd_sc_hvl__inv_1_0/A.n11 sky130_fd_sc_hvl__inv_1_0/A.n10 174.484
+R4 sky130_fd_sc_hvl__inv_1_0/A.n9 sky130_fd_sc_hvl__inv_1_0/A.n8 174.484
+R5 sky130_fd_sc_hvl__inv_1_0/A.n13 sky130_fd_sc_hvl__inv_1_0/A.n12 167.397
+R6 sky130_fd_sc_hvl__inv_1_0/A.n14 sky130_fd_sc_hvl__inv_1_0/A.n9 166.666
+R7 sky130_fd_sc_hvl__inv_1_0/A.n14 sky130_fd_sc_hvl__inv_1_0/A.n13 133.803
+R8 sky130_fd_sc_hvl__inv_1_0/A.n6 sky130_fd_sc_hvl__inv_1_0/A.n5 125.893
+R9 sky130_fd_sc_hvl__inv_1_0/A.n0 sky130_fd_sc_hvl__inv_1_0/A.t6 114.03
+R10 sky130_fd_sc_hvl__inv_1_0/A.n7 sky130_fd_sc_hvl__inv_1_0/A.t3 95.159
+R11 sky130_fd_sc_hvl__inv_1_0/A.n17 sky130_fd_sc_hvl__inv_1_0/A.n16 84.269
+R12 sky130_fd_sc_hvl__inv_1_0/A.n0 sky130_fd_sc_hvl__inv_1_0/A.t4 81.587
+R13 sky130_fd_sc_hvl__inv_1_0/A sky130_fd_sc_hvl__inv_1_0/A.n19 61.029
+R14 sky130_fd_sc_hvl__inv_1_0/A.n6 sky130_fd_sc_hvl__inv_1_0/A.n2 57.84
+R15 sky130_fd_sc_hvl__inv_1_0/A.n5 sky130_fd_sc_hvl__inv_1_0/A.n3 48.2
+R16 sky130_fd_sc_hvl__inv_1_0/A.n13 sky130_fd_sc_hvl__inv_1_0/A.n11 48.2
+R17 sky130_fd_sc_hvl__inv_1_0/A.n15 sky130_fd_sc_hvl__inv_1_0/A.n14 48.2
+R18 sky130_fd_sc_hvl__inv_1_0/A.n18 sky130_fd_sc_hvl__inv_1_0/A.t2 29.745
+R19 sky130_fd_sc_hvl__inv_1_0/A.n17 sky130_fd_sc_hvl__inv_1_0/A.t0 28.19
+R20 sky130_fd_sc_hvl__inv_1_0/A.n19 sky130_fd_sc_hvl__inv_1_0/A.t1 21.994
+R21 sky130_fd_sc_hvl__inv_1_0/A.n19 sky130_fd_sc_hvl__inv_1_0/A.n7 11.124
+R22 sky130_fd_sc_hvl__inv_1_0/A.n7 sky130_fd_sc_hvl__inv_1_0/A.n6 11.093
+R23 sky130_fd_sc_hvl__inv_1_0/A sky130_fd_sc_hvl__inv_1_0/A.n1 11.051
+R24 sky130_fd_sc_hvl__inv_1_0/A.n1 sky130_fd_sc_hvl__inv_1_0/A.n0 8.74
+R25 sky130_fd_sc_hvl__inv_1_0/A.n1 sky130_fd_sc_hvl__inv_1_0/A 6.616
+R26 sky130_fd_sc_hvl__inv_1_0/A.n18 sky130_fd_sc_hvl__inv_1_0/A.n17 2.664
+R27 sky130_fd_sc_hvl__inv_1_0/A.n19 sky130_fd_sc_hvl__inv_1_0/A.n18 1.375
+R28 a_n260_n1316.n0 a_n260_n1316.t3 30.627
+R29 a_n260_n1316.n0 a_n260_n1316.t0 30.366
+R30 a_n260_n1316.n1 a_n260_n1316.t1 20.24
+R31 a_n260_n1316.t2 a_n260_n1316.n1 20.076
+R32 a_n260_n1316.n1 a_n260_n1316.n0 8.019
+R33 sky130_fd_sc_hvl__inv_1_1/A.n14 sky130_fd_sc_hvl__inv_1_1/A.n13 176.013
+R34 sky130_fd_sc_hvl__inv_1_1/A.n9 sky130_fd_sc_hvl__inv_1_1/A.n8 174.987
+R35 sky130_fd_sc_hvl__inv_1_1/A.n10 sky130_fd_sc_hvl__inv_1_1/A.t4 174.484
+R36 sky130_fd_sc_hvl__inv_1_1/A.n7 sky130_fd_sc_hvl__inv_1_1/A.n6 174.484
+R37 sky130_fd_sc_hvl__inv_1_1/A.n13 sky130_fd_sc_hvl__inv_1_1/A.n12 167.397
+R38 sky130_fd_sc_hvl__inv_1_1/A.n11 sky130_fd_sc_hvl__inv_1_1/A.n10 166.666
+R39 sky130_fd_sc_hvl__inv_1_1/A.n4 sky130_fd_sc_hvl__inv_1_1/A.n3 163.879
+R40 sky130_fd_sc_hvl__inv_1_1/A.n1 sky130_fd_sc_hvl__inv_1_1/A.t3 148.951
+R41 sky130_fd_sc_hvl__inv_1_1/A.n12 sky130_fd_sc_hvl__inv_1_1/A.n11 133.803
+R42 sky130_fd_sc_hvl__inv_1_1/A.n19 sky130_fd_sc_hvl__inv_1_1/A.t5 114.03
+R43 sky130_fd_sc_hvl__inv_1_1/A.n15 sky130_fd_sc_hvl__inv_1_1/A.n14 108.659
+R44 sky130_fd_sc_hvl__inv_1_1/A.n19 sky130_fd_sc_hvl__inv_1_1/A.t6 81.587
+R45 sky130_fd_sc_hvl__inv_1_1/A.n11 sky130_fd_sc_hvl__inv_1_1/A.n9 48.2
+R46 sky130_fd_sc_hvl__inv_1_1/A.n12 sky130_fd_sc_hvl__inv_1_1/A.n7 48.2
+R47 sky130_fd_sc_hvl__inv_1_1/A.n4 sky130_fd_sc_hvl__inv_1_1/A.n2 48.2
+R48 sky130_fd_sc_hvl__inv_1_1/A.n1 sky130_fd_sc_hvl__inv_1_1/A.n0 48.2
+R49 sky130_fd_sc_hvl__inv_1_1/A sky130_fd_sc_hvl__inv_1_1/A.n18 29.615
+R50 sky130_fd_sc_hvl__inv_1_1/A.n16 sky130_fd_sc_hvl__inv_1_1/A.t2 28.19
+R51 sky130_fd_sc_hvl__inv_1_1/A.n15 sky130_fd_sc_hvl__inv_1_1/A.t1 28.19
+R52 sky130_fd_sc_hvl__inv_1_1/A.n18 sky130_fd_sc_hvl__inv_1_1/A.t0 21.793
+R53 sky130_fd_sc_hvl__inv_1_1/A.n5 sky130_fd_sc_hvl__inv_1_1/A.n4 19.54
+R54 sky130_fd_sc_hvl__inv_1_1/A.n5 sky130_fd_sc_hvl__inv_1_1/A.n1 16.283
+R55 sky130_fd_sc_hvl__inv_1_1/A sky130_fd_sc_hvl__inv_1_1/A.n20 10.83
+R56 sky130_fd_sc_hvl__inv_1_1/A.n17 sky130_fd_sc_hvl__inv_1_1/A.n5 10.623
+R57 sky130_fd_sc_hvl__inv_1_1/A.n20 sky130_fd_sc_hvl__inv_1_1/A.n19 7.5
+R58 sky130_fd_sc_hvl__inv_1_1/A.n20 sky130_fd_sc_hvl__inv_1_1/A 4.277
+R59 sky130_fd_sc_hvl__inv_1_1/A.n16 sky130_fd_sc_hvl__inv_1_1/A.n15 2.446
+R60 sky130_fd_sc_hvl__inv_1_1/A.n17 sky130_fd_sc_hvl__inv_1_1/A.n16 1.885
+R61 sky130_fd_sc_hvl__inv_1_1/A.n18 sky130_fd_sc_hvl__inv_1_1/A.n17 0.315
+R62 vdda.n9 vdda.t12 1427.68
+R63 vdda.t19 vdda.t15 1094.59
+R64 vdda.t13 vdda.t4 1060.68
+R65 vdda.n62 vdda.n61 1008.54
+R66 vdda.n54 vdda.t2 894.523
+R67 vdda.n41 vdda.t7 894.523
+R68 vdda.n32 vdda.t10 894.523
+R69 vdda.n22 vdda.t0 894.523
+R70 vdda.t17 vdda.t13 854.843
+R71 vdda.n9 vdda.t17 540.051
+R72 vdda.n62 vdda.t19 492.806
+R73 vdda.n61 vdda.t6 466.067
+R74 vdda.n42 vdda.n11 321.882
+R75 vdda.n31 vdda.n14 321.882
+R76 vdda.n21 vdda.n17 321.882
+R77 vdda.n63 vdda.n62 220.37
+R78 vdda.n58 vdda.n57 152
+R79 vdda.n53 vdda.n52 152
+R80 vdda.n0 vdda.n60 152
+R81 vdda.n20 vdda.n19 152
+R82 vdda.n16 vdda.n15 152
+R83 vdda.n25 vdda.n24 152
+R84 vdda.n30 vdda.n29 152
+R85 vdda.n28 vdda.n13 152
+R86 vdda.n6 vdda.n34 152
+R87 vdda.n39 vdda.n38 152
+R88 vdda.n36 vdda.n10 152
+R89 vdda.n3 vdda.n43 152
+R90 vdda.n12 vdda.t11 114.668
+R91 vdda.n18 vdda.t1 114.624
+R92 vdda.n50 vdda.t3 84.253
+R93 vdda.n7 vdda.n8 0.012
+R94 vdda.n1 vdda.n50 50.67
+R95 vdda.t8 vdda.n8 114.664
+R96 vdda.n39 vdda.n10 34.447
+R97 vdda.n43 vdda.n10 34.447
+R98 vdda.n30 vdda.n13 34.447
+R99 vdda.n34 vdda.n13 34.447
+R100 vdda.n20 vdda.n16 34.447
+R101 vdda.n24 vdda.n16 34.447
+R102 vdda.n47 vdda.t14 31.63
+R103 vdda.n68 vdda.t16 31.493
+R104 vdda.n67 vdda.t20 31.475
+R105 vdda.n46 vdda.t18 30.549
+R106 vdda.n48 vdda.t5 30.411
+R107 vdda.n69 vdda.t9 30.339
+R108 vdda.n40 vdda.n39 28.722
+R109 vdda.n34 vdda.n33 28.722
+R110 vdda.n24 vdda.n23 28.722
+R111 vdda.n60 vdda.n59 15
+R112 vdda.n57 vdda.n56 15
+R113 vdda.n64 vdda.n63 15
+R114 vdda.n43 vdda.n42 15
+R115 vdda.n42 vdda.n41 15
+R116 vdda.n11 vdda.n10 15
+R117 vdda.n31 vdda.n30 15
+R118 vdda.n32 vdda.n31 15
+R119 vdda.n14 vdda.n13 15
+R120 vdda.n21 vdda.n20 15
+R121 vdda.n22 vdda.n21 15
+R122 vdda.n17 vdda.n16 15
+R123 vdda.n56 vdda.n55 13.722
+R124 vdda.n40 vdda.n11 13.722
+R125 vdda.n33 vdda.n14 13.722
+R126 vdda.n23 vdda.n17 13.722
+R127 vdda.n45 vdda.n9 11.437
+R128 vdda.n66 vdda.n65 3.849
+R129 vdda.n45 vdda.n44 2.502
+R130 vdda.n2 vdda.n0 1.741
+R131 vdda.n38 vdda.n35 1.725
+R132 vdda.n29 vdda.n26 1.664
+R133 vdda.n68 vdda.n67 1.172
+R134 vdda.n47 vdda.n46 1.143
+R135 vdda.n65 vdda.n64 1.136
+R136 vdda.n67 vdda.n2 0.807
+R137 vdda.n46 vdda.n45 0.777
+R138 vdda vdda.n48 0.653
+R139 vdda.n55 vdda.n54 0.64
+R140 vdda.n41 vdda.n40 0.64
+R141 vdda.n33 vdda.n32 0.64
+R142 vdda.n23 vdda.n22 0.64
+R143 vdda.n2 vdda.n66 0.57
+R144 vdda.n29 vdda 0.526
+R145 vdda vdda.n69 0.5
+R146 vdda.n37 vdda 0.417
+R147 vdda.n19 vdda.n18 0.386
+R148 vdda.n1 vdda 0.385
+R149 vdda.n0 vdda 0.351
+R150 vdda.n49 vdda 0.295
+R151 vdda.n4 vdda.n7 0.138
+R152 vdda.n58 vdda.n53 0.26
+R153 vdda.n29 vdda.n28 0.26
+R154 vdda.n36 vdda.n5 0.23
+R155 vdda.n27 vdda 0.228
+R156 vdda.n0 vdda.n58 0.222
+R157 vdda.n37 vdda.n36 0.217
+R158 vdda.n69 vdda.n68 0.207
+R159 vdda.n19 vdda.n15 0.196
+R160 vdda.n25 vdda.n15 0.196
+R161 vdda.n48 vdda.n47 0.186
+R162 vdda.n28 vdda.n27 0.163
+R163 vdda.n5 vdda 0.152
+R164 vdda.n53 vdda 0.13
+R165 vdda.n18 vdda 0.122
+R166 vdda.n35 vdda.n6 0.122
+R167 vdda.n26 vdda.n25 0.098
+R168 vdda.n0 vdda.n51 0.095
+R169 vdda.n51 vdda.n1 0.095
+R170 vdda.n7 vdda 0.094
+R171 vdda.n1 vdda.n49 0.086
+R172 vdda.n27 vdda.n6 0.086
+R173 vdda.n6 vdda.n12 0.085
+R174 vdda.n44 vdda.n3 0.084
+R175 vdda.n12 vdda 0.078
+R176 vdda.n3 vdda.n4 0.006
+R177 vdda.n38 vdda.n37 0.029
+R178 vdda vdda.n8 0.072
+R179 vdda.n4 vdda.n5 0.029
+R180 nmos8point5_0/d.n0 nmos8point5_0/d.t2 35.241
+R181 nmos8point5_0/d.n1 nmos8point5_0/d.t1 35.197
+R182 nmos8point5_0/d.n1 nmos8point5_0/d.t3 17.001
+R183 nmos8point5_0/d.n0 nmos8point5_0/d.t0 16.991
+R184 nmos8point5_0/d.n2 nmos8point5_0/d.t4 16.77
+R185 nmos8point5_0/d nmos8point5_0/d.n0 6.121
+R186 nmos8point5_0/d.n2 nmos8point5_0/d.n1 3.507
+R187 nmos8point5_0/d nmos8point5_0/d.n2 0.247
+R188 a_3148_n1460.n0 a_3148_n1460.t3 33.964
+R189 a_3148_n1460.n0 a_3148_n1460.t2 29.594
+R190 a_3148_n1460.n1 a_3148_n1460.t0 19.538
+R191 a_3148_n1460.t1 a_3148_n1460.n1 16.77
+R192 a_3148_n1460.n1 a_3148_n1460.n0 7.374
+
+
+
+V1 vdda vssa 3.3
+V2 vssa GND 0
+V3 clk vssa pulse 0 3.3 1n 1n 1n 2u 5u
+V4 vref vssa sin 1.65 1.65 10K
+V5 vinp vssa 1.65
+**** begin user architecture code
+
+
+.tran 1u 1m
+.options gmin=1E-11
+.save vinp vref clk vom vop vm vp
+
+  .lib /home/vinodhini/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.save vinp vref clk vom vop vm vp
+.end

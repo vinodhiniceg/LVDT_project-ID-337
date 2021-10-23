@@ -1,0 +1,32 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1634908039
+<< nwell >>
+rect 170 1536 496 1566
+rect -30 -4 680 1536
+<< poly >>
+rect 170 1458 496 1566
+rect 114 1164 270 1230
+rect 378 1154 534 1220
+rect 118 866 274 932
+rect 378 858 534 924
+rect 124 568 280 634
+rect 386 568 542 634
+rect 116 268 272 334
+rect 392 272 548 338
+<< metal1 >>
+rect 32 1438 596 1444
+rect 32 1406 604 1438
+rect 36 1348 84 1406
+rect 556 1356 604 1406
+rect 36 1324 92 1348
+rect 38 156 92 1324
+rect 300 162 354 1332
+rect 556 1324 614 1356
+rect 560 164 614 1324
+use sky130_fd_pr__pfet_g5v0d10v5_FTTAN3  sky130_fd_pr__pfet_g5v0d10v5_FTTAN3_0
+timestamp 1634907977
+transform 1 0 323 0 1 750
+box -353 -754 353 754
+<< end >>

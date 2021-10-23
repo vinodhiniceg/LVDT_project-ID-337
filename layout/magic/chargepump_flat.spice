@@ -1,0 +1,192 @@
+* NGSPICE file created from chargepump_flat.ext - technology: sky130A
+
+
+* Top level circuit chargepump_flat
+
+X0 dg.t2 dg.t1 vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X1 vdda.t4 Iin.t0 Iin.t1 vdda.t2 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X2 vssa dg.t3 nc.t1 vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X3 nc dg vssa vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=33
+X4 vdda.t3 Iin.t2 pc.t0 vdda.t2 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X5 dg.t0 Iin.t3 vdda.t1 vdda.t0 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X6 vc out1b pc.t1 vdda.t2 sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X7 vssa dg dg vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=9
+X8 nc.t0 out2 vc vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+X9 vdda Iin Iin vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=9
+X10 pc Iin vdda vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=39
+X11 vc out1b pc vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=9
+X12 vc out2 nc vssa sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=9
+X13 vdda Iin dg vdda sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u M=9
+R0 dg.n52 dg.n51 75.839
+R1 dg.n24 dg.n23 48.2
+R2 dg.n25 dg.n24 48.2
+R3 dg.n26 dg.n25 48.2
+R4 dg.n27 dg.n26 48.2
+R5 dg.n19 dg.t1 48.2
+R6 dg.n20 dg.n19 48.2
+R7 dg.n21 dg.n20 48.2
+R8 dg.n22 dg.n21 48.2
+R9 dg.n48 dg.n47 48.2
+R10 dg.n49 dg.n48 48.2
+R11 dg.n50 dg.n49 48.2
+R12 dg.n51 dg.n50 48.2
+R13 dg.n53 dg.n52 48.2
+R14 dg.n54 dg.n53 48.2
+R15 dg.n55 dg.n54 48.2
+R16 dg.n56 dg.n55 48.2
+R17 dg.n57 dg.n56 48.2
+R18 dg.n58 dg.n57 48.2
+R19 dg.n59 dg.n58 48.2
+R20 dg.n60 dg.n59 48.2
+R21 dg.t3 dg.n60 48.2
+R22 dg.n61 dg.t3 48.2
+R23 dg.n62 dg.n61 48.2
+R24 dg.n31 dg.n30 48.2
+R25 dg.n32 dg.n31 48.2
+R26 dg.n33 dg.n32 48.2
+R27 dg.n34 dg.n33 48.2
+R28 dg.n35 dg.n34 48.2
+R29 dg.n36 dg.n35 48.2
+R30 dg.n37 dg.n36 48.2
+R31 dg.n38 dg.n37 48.2
+R32 dg.n39 dg.n38 48.2
+R33 dg.n40 dg.n39 48.2
+R34 dg.n41 dg.n40 48.2
+R35 dg.n42 dg.n41 48.2
+R36 dg.n43 dg.n42 48.2
+R37 dg.n44 dg.n43 48.2
+R38 dg.n45 dg.n44 48.2
+R39 dg.n46 dg.n45 48.2
+R40 dg.n63 dg.n46 47.587
+R41 dg.n28 dg.n22 46.516
+R42 dg.n28 dg.n27 41.831
+R43 dg.n63 dg.n62 41.664
+R44 dg.n13 dg.t0 29.732
+R45 dg.n4 dg.t2 17.497
+R46 dg.n4 dg.n3 16.77
+R47 dg.n5 dg.n2 16.77
+R48 dg.n6 dg.n1 16.77
+R49 dg.n7 dg.n0 16.77
+R50 dg.n17 dg.n8 16.77
+R51 dg.n14 dg.n11 16.77
+R52 dg.n15 dg.n10 16.77
+R53 dg.n16 dg.n9 16.77
+R54 dg.n13 dg.n12 16.77
+R55 dg dg.n63 13.626
+R56 dg.n29 dg.n28 3.187
+R57 dg.n18 dg.n7 1.017
+R58 dg.n18 dg.n17 0.919
+R59 dg.n16 dg.n15 0.735
+R60 dg.n15 dg.n14 0.735
+R61 dg.n6 dg.n5 0.727
+R62 dg.n5 dg.n4 0.727
+R63 dg.n7 dg.n6 0.725
+R64 dg.n17 dg.n16 0.719
+R65 dg.n14 dg.n13 0.699
+R66 dg dg.n29 0.346
+R67 dg.n29 dg.n18 0.27
+R68 Iin.n77 Iin.n76 542.831
+R69 Iin.n32 Iin.n27 364.483
+R70 Iin.n27 Iin.n22 197.597
+R71 Iin.n67 Iin.n66 166.088
+R72 Iin.n68 Iin.n67 156.858
+R73 Iin.n66 Iin.n65 155.833
+R74 Iin.n78 Iin.n77 59.134
+R75 Iin.n32 Iin.n31 50.564
+R76 Iin.n27 Iin.n26 48.64
+R77 Iin.n72 Iin.t2 48.2
+R78 Iin.n73 Iin.n72 48.2
+R79 Iin.n74 Iin.n73 48.2
+R80 Iin.n58 Iin.n57 48.2
+R81 Iin.n59 Iin.n58 48.2
+R82 Iin.n60 Iin.n59 48.2
+R83 Iin.n61 Iin.n60 48.2
+R84 Iin.n62 Iin.n61 48.2
+R85 Iin.n63 Iin.n62 48.2
+R86 Iin.n56 Iin.n55 48.2
+R87 Iin.n64 Iin.n63 48.2
+R88 Iin.n48 Iin.n47 48.2
+R89 Iin.n49 Iin.n48 48.2
+R90 Iin.n50 Iin.n49 48.2
+R91 Iin.n51 Iin.n50 48.2
+R92 Iin.n52 Iin.n51 48.2
+R93 Iin.n53 Iin.n52 48.2
+R94 Iin.n46 Iin.n45 48.2
+R95 Iin.n54 Iin.n53 48.2
+R96 Iin.n38 Iin.n37 48.2
+R97 Iin.n39 Iin.n38 48.2
+R98 Iin.n40 Iin.n39 48.2
+R99 Iin.n41 Iin.n40 48.2
+R100 Iin.n42 Iin.n41 48.2
+R101 Iin.n43 Iin.n42 48.2
+R102 Iin.n36 Iin.n35 48.2
+R103 Iin.n44 Iin.n43 48.2
+R104 Iin.n34 Iin.n33 48.2
+R105 Iin.n70 Iin.n69 48.2
+R106 Iin.n71 Iin.n70 48.2
+R107 Iin.n75 Iin.n74 48.2
+R108 Iin.n19 Iin.n18 48.2
+R109 Iin.n20 Iin.n19 48.2
+R110 Iin.n21 Iin.n20 48.2
+R111 Iin.n22 Iin.n21 48.2
+R112 Iin.t3 Iin.n23 48.2
+R113 Iin.n24 Iin.t3 48.2
+R114 Iin.n25 Iin.n24 48.2
+R115 Iin.n26 Iin.n25 48.2
+R116 Iin.t0 Iin.n28 48.2
+R117 Iin.n29 Iin.t0 48.2
+R118 Iin.n30 Iin.n29 48.2
+R119 Iin.n31 Iin.n30 48.2
+R120 Iin.n79 Iin.n78 48.2
+R121 Iin.n80 Iin.n79 48.2
+R122 Iin.n81 Iin.n80 48.2
+R123 Iin.n82 Iin.n81 48.2
+R124 Iin.n9 Iin.n7 27.695
+R125 Iin.n9 Iin.n8 27.695
+R126 Iin.n5 Iin.n3 27.695
+R127 Iin.n5 Iin.n4 27.695
+R128 Iin.n2 Iin.n0 27.695
+R129 Iin.n2 Iin.n1 27.695
+R130 Iin.n16 Iin.n14 27.695
+R131 Iin.n16 Iin.n15 27.695
+R132 Iin.n12 Iin.t1 27.695
+R133 Iin.n12 Iin.n11 27.695
+R134 Iin.n77 Iin.n32 26.851
+R135 Iin Iin.n82 25.963
+R136 Iin.n65 Iin.n56 24.1
+R137 Iin.n65 Iin.n64 24.1
+R138 Iin.n66 Iin.n46 24.1
+R139 Iin.n66 Iin.n54 24.1
+R140 Iin.n67 Iin.n36 24.1
+R141 Iin.n67 Iin.n44 24.1
+R142 Iin.n68 Iin.n34 24.1
+R143 Iin.n69 Iin.n68 24.1
+R144 Iin.n76 Iin.n71 24.1
+R145 Iin.n76 Iin.n75 24.1
+R146 Iin.n6 Iin.n2 0.922
+R147 Iin.n10 Iin.n6 0.68
+R148 Iin.n13 Iin.n10 0.68
+R149 Iin.n17 Iin.n13 0.664
+R150 Iin Iin.n17 0.257
+R151 Iin.n10 Iin.n9 0.24
+R152 Iin.n6 Iin.n5 0.24
+R153 Iin.n17 Iin.n16 0.24
+R154 Iin.n13 Iin.n12 0.24
+R155 vdda vdda.t2 488.123
+R156 vdda.n0 vdda.t0 452.98
+R157 vdda.n2 vdda.t3 30.27
+R158 vdda.n1 vdda.t4 30.141
+R159 vdda.n0 vdda.t1 30.119
+R160 vdda vdda.n2 7.655
+R161 vdda.n2 vdda.n1 3.383
+R162 vdda.n1 vdda.n0 0.596
+R163 nc nc.t1 20.639
+R164 nc nc.t0 20.524
+R165 pc pc.t0 34.088
+R166 pc pc.t1 28.389
+C0 nc vssa 16.05fF
+C1 dg vssa 13.35fF
+C2 vdda vssa 55.44fF
+C3 vdda.t2 vssa 24.26fF
+.end
+

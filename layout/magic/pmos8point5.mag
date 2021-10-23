@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1634618124
+<< nwell >>
+rect -40 -24 794 626
+<< poly >>
+rect 134 576 626 622
+rect 112 280 162 338
+rect 278 282 328 340
+rect 438 278 488 336
+rect 594 276 644 334
+<< metal1 >>
+rect 46 528 722 560
+rect 48 470 82 528
+rect 362 466 396 528
+rect 682 460 716 528
+rect 48 168 84 458
+rect 204 166 240 456
+rect 362 170 398 460
+rect 518 168 554 458
+rect 676 168 712 458
+rect 204 96 240 156
+rect 522 96 558 152
+rect 196 64 564 96
+use sky130_fd_pr__pfet_g5v0d10v5_3AHBS2  sky130_fd_pr__pfet_g5v0d10v5_3AHBS2_0
+timestamp 1634618124
+transform 1 0 381 0 1 309
+box -411 -313 411 313
+<< end >>

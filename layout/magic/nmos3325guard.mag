@@ -1,0 +1,28 @@
+magic
+tech sky130A
+timestamp 1634115841
+<< pwell >>
+rect -346 3753 2887 3767
+rect -346 3591 2901 3753
+rect -339 -164 2901 3591
+rect -339 -252 2894 -164
+<< mvpsubdiff >>
+rect -346 3753 2887 3767
+rect -346 3591 2901 3753
+rect -339 -76 -82 3591
+rect 2644 -76 2901 3591
+rect -339 -164 2901 -76
+rect -339 -252 2894 -164
+use nmos33210  nmos33210_2
+timestamp 1634112475
+transform 1 0 1916 0 1 11
+box 0 0 880 3481
+use nmos33210  nmos33210_1
+timestamp 1634112475
+transform 1 0 945 0 1 3
+box 0 0 880 3481
+use nmos33210  nmos33210_0
+timestamp 1634112475
+transform 1 0 0 0 1 0
+box 0 0 880 3481
+<< end >>
