@@ -1,5 +1,5 @@
 
-## Design of oscillator based read-out circuit for LVDT
+# Design of oscillator based read-out circuit for LVDT
 
 ## System Description
 
