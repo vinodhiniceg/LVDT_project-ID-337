@@ -1,23 +1,31 @@
 
 ## Design of oscillator based read-out circuit for LVDT
 
-##System Description
+## System Description
 
 A simple and novel alternative method for LVDT signal conditioning is demonstrated in this  work. In the proposed method, the primary coil of the transducer is left unused and hence avoids the use of low distortion sine wave oscillators for primary coil excitation and the associated phase compensation circuitry. The proposed read-out circuit uses the secondary coil of an LVDT as part of a colpitts oscillator along with a frequency counter to derive the position information.
 
 The proposed circuit consists of three major circuit blocks. They are (a) An active oscillator circuit for converting the LVDT inductance to frequency information, (b) a slope amplifier to convert the inductance information suitable for time domain signal processing and (c) a Frequency to Digital converter (FDC) to derive the frequency information in digital domain. Figure 1 below shows the complete circuit blocks with its schematics. 
 
-![Figure1](./img/Image1.png "Figure1")
+![Figure1](./img/Image1.png "Figure 1")
 
 The description of each of these ciruit blocks , its specification, design procedure, I/O pin description, the results obtained on prelayout and postlayout simulations are discussed in detail below. 
 
-##Circuit schematic, design description, specifications and I/O pin description of individual blocks
+## Circuit schematic, design description, specifications and I/O pin description of individual blocks
 
 The circuit details of integrated colpitts oscillator and slope amplifier is presented first, following which the circuit details of FDC is available.
 
-###Integrated Colpitts oscillator and slope amplifier
+### Integrated Colpitts oscillator and slope amplifier
 
-####Design specifications
+#### Design Specifications
+
+| Parameter  | Specification  |
+|---|---|
+| LVDT Inductance Range  | 10 mH to 7.35 mH corresponding to a displacement range of 11 mm |
+| Oscillation Frequency Range  | 8.9 kHz to 10.45 kHz  |
+| Supply Voltage for Colpitts Oscillator | 1.8 V |
+| Supply Voltage for Slope Amplifier  | 3.3 V  |
+| Slope Gain from three stages of slope amplifier  | 10,000  |
 
 
 The circuit schematic of the single ended common base colpitts oscillator is shown in Figure 1. In this circuit, L1, C1 and C2 constitute the tank circuit of the Colpitts oscillator, and L1 and R1 together represent one of the secondary coils of the LVDT. For the LVDT used, the typical value of secondary inductance when the core is at the null position is in the order of 10mH and the value of R1, is 68 Ω. LVDTs are usually operated at low frequencies (2KHz -10KHz). So in order to make the coils resonate around 10KHz, the combination of C1 and C2 capacitance should be chosen in the order of 25 nF. Owing to the size of the LVDT inductance and the resonant capacitance, these are implemented off chip. The bias voltage VA and VB is also derived off chip. Therefore, the oscillator block needs 4 external analog I/O pins.  The device dimensions for the colpitts oscillator are chosen in such a way that the jitter contribution is solely due to the LVDT inductor (around 400ps). As the  output of the colpitts oscillator swings with the supply voltage as its common mode, the supply voltage used for this stage is 1.8V.  Also, as the devices has to tolerate the swings levels at the output, high voltage devices (5V) are chosen for the entire design, and supply for the subsequent stages is chosen to be 3.3V. Next, the design of slope amplifier is discussed. 
@@ -28,11 +36,11 @@ The circuit schematic of a three stage Gm-C integrator along with the colpitts o
 
 A snapshot of the layout for the above circuit is shown in figure 3. The mag file is available in the folder named ‘layout’ (file name:colpitts_slopeamp.mag). The transistors and the capacitors corresponding to figure 2 is labelled in the layout. Owing to the higher device dimensions of these transistors, all of them are realised using multifingers. Each transistors has dummies on its left and right and a guard ring is placed sorrounding it. Substrate contacts are placed are inbetween the transistors to avoid DRC violations. The top and bottom blue metal lines indicate vdd and vss respectively. This design is LVS cleared, and the results from netgen are available in the folder named ‘lvs’ (filename:colpitts_slopeamp.out)  After parasitic RC extraction, postlayout simulations has been carried out with the extracted spice netlist. The extracted spice netlist is available in the folder named ‘postlayout’ (filename: colpitts_slopeamp_postextracted.spice)  A snapshot of the postlayout simulation results is shown in figure 3. As shown in figure 2, ‘vout’ indicates the output from colpitts oscillator. The oscillations occur at a frequency of 8.9kHz for the chosen value of inductance and capacitances. ‘vout1’, ‘vout2’ and ‘vout3’ are the outputs from stage 1, 2 and 3 of the slope amplifier respectively. The slope gain at the output of colpitts oscillator is around 55KV/s, whereas at the output of three stages of the slope amplifier, the slope gain is 0.6GV/s. This output from the slope amplifier is further fed to the FDC for processing. 
 
-###Frequency to Digital converer
+### Frequency to Digital converer
 
-####Design specifications
+#### Design specifications
 
-####Circuit operation of FDC and its verification in prelayout simulation
+#### Circuit operation of FDC and its verification in prelayout simulation
 
 The circuit schematic of the frequency to digital converter is shown in figure 1. It consists of a charge pump and associated gating logic that constitutes a Phase detector, a 3-b ADC (5 levels), a filtering block, a digital constant adder, a 5-b counter, and a pulse stretcher. Two events control the timing: 1) transition of input from low to high and 2) transition of the “Carry” signal from low to high. The 5-b counter is driven by an 200 kHz external clock, and the “Carry” signal goes high on its terminal count. In normal operation, the Q output of the flip flop goes high when the input goes high. This causes the positive current source in the charge pump, Ip to be connected to the capacitor. This current source remains connected to the capacitor until the “Carry” signal goes high, at which time it is disconnected from the capacitor. The negative current source, In  is connected to the capacitor for a fixed duration (42.5us) each time the “Carry” signal goes high.  After the “Carry” signal goes high, the counter is loaded with a number obtained by filtering the ADC output. This effectively sets the time until the next “Carry,” that closes the feedback loop. This loop operates similar to a second order sigma delta modulator and has all advantages of noise shaping that a sigma delta modulator posses.
 
@@ -42,7 +50,7 @@ The FDC loop takes only fixed frequency DC inputs from the slope amplifier and o
 
 From figure 5, it can be seen that the capacitor voltage settles to 1.65V after a transient and the corresponding ADC output levels is 0 (000- MSB at the top). It can also be seen from the simulation results that the ADC resolves the other levels when there is a initial transient in the loop, before the loop locks.
 
-####Layout of FDC
+#### Layout of FDC
 
 The layout for the digital portions of the FDC has been carried out using openlane. Verilog code has been written for the digital portions and its RTL functionality is verified using iverilog. Independant description for the digital portion is available in the Readme.md file associated with the folder 'verilog'
 
@@ -50,6 +58,6 @@ The layout for the analog portions , comparator and charge pump has been carried
 
 The layout for charge pump , has been carried out and is available in the folder named ‘layout’ (filename: ‘chargepump.mag’). The layout is LVS cleared and postlayout simulations of the  extracted spice netlist with parasitics has been carried out. The pre-layout and post-layout simulations do not match and some debuggigng needs to be done with it.
 
-###Checklist for tape-out
+### Checklist for tape-out
 From the above discussions , a complete checklist of the completed/ to-be-completed tasks before the tapeout deadline is given below
  
