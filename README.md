@@ -7,7 +7,7 @@ A simple and novel alternative method for LVDT signal conditioning is demonstrat
 
 The proposed circuit consists of three major circuit blocks. They are (a) An active oscillator circuit for converting the LVDT inductance to frequency information, (b) a slope amplifier to convert the inductance information suitable for time domain signal processing and (c) a Frequency to Digital converter (FDC) to derive the frequency information in digital domain. Figure 1 below shows the complete circuit blocks with its schematics. 
 
-![Figure1](/Img/Image1.png "Figure1")
+![Figure1](./img/Image1.png "Figure1")
 
 The description of each of these ciruit blocks , its specification, design procedure, I/O pin description, the results obtained on prelayout and postlayout simulations are discussed in detail below. 
 
