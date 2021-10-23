@@ -9,7 +9,7 @@ The design files reside in `LVDT/digital/rtl/` and are listed below.
 5. `timing_cont.v` - Timing Controller module which generates `carry_3.5` and `out2` signals.
 6. `two_minus_z_inverse.v`- (2-z^-1) block with addition of a constant 11.
 
-Further explanation on the operation given in.
+
 
 ## Requirements
 
