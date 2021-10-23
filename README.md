@@ -134,3 +134,10 @@ From the above discussions , a complete checklist of the completed/ to-be-comple
 3. I. I. Izyumin et al., "A 7ppm, 6°/hr frequency-output MEMS gyroscope," *2015 28th IEEE International Conference on Micro Electro Mechanical Systems (MEMS)*, 2015, pp. 33-36, [doi: 10.1109/MEMSYS.2015.7050879](https://ieeexplore.ieee.org/document/7050879).
 
 4. I. Galton, W. Huff, P. Carbone and E. Siragusa, "A delta-sigma PLL for 14-b, 50 kSample/s frequency-to-digital conversion of a 10 MHz FM signal," in *IEEE Journal of Solid-State Circuits*, vol. 33, no. 12, pp. 2042-2053, Dec. 1998, [doi: 10.1109/4.735546](https://ieeexplore.ieee.org/document/735546).
+
+
+
+## Project Owner Information
+======================================
+
+The project owner is Mrs. Vinodhini G. Edward, a PhD student under the supervision of Prof. Dr. P. V. Ramakrishna and Dr. J. Dhurga Devi, at the Department of Electronics and Communication Engineering, College of Engineering Guindy Campus, Anna University.
