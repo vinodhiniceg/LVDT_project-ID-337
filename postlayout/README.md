@@ -1,3 +1,3 @@
 ## Post-Layout Simulation
 
-Post-Layout simulations of Integrated Colpitts Oscillator and Slope Amplifier and the StrongARM latch are provided in this folder.
+Post-Layout RC extracted spice files of Integrated Colpitts Oscillator and Slope Amplifier, StrongARM latch comparator and Charge pump are provided in this folder.

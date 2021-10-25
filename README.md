@@ -103,7 +103,7 @@ A snapshot of the the post-layout simualtion results is given in Figure 6.  The 
 ![Figure 6](./img/Image6.png "Figure 6")
 Fig. 6 Post-Layout Simulations of Comparator
 
-The layout for charge pump has been carried out and is available in the folder named `/layout/chargepump.mag`. The layout is LVS cleared and post-layout simulations of the  extracted spice netlist with parasitics has been carried out. The pre-layout and post-layout simulations do not match and some debuggigng needs to be done with it.
+The layout for charge pump has been carried out and is available in the folder named `/layout/chargepump.mag`. The layout is LVS cleared and post-layout simulations of the  extracted spice netlist with parasitics has been carried out and is available in the folder `/postlayout/chargepump_postextracted.spice`. 
 
 ### Checklist for Tape-Out
 From the above discussions , a complete checklist of the completed/ to-be-completed tasks before the tapeout deadline is given below.
